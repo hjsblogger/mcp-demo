@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "appium-mcp-local": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "appium-mcp@latest"
+      ],
+      "env": {
+        "APPIUM_HOST": "localhost",
+        "APPIUM_PORT": "4723",
+        "APPIUM_PATH": "/",
+        "APPIUM_PROTOCOL": "http"
+      }
+    },
+    "appium-mcp-cloud": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "appium-mcp@latest"
+      ],
+      "env": {
+        "APPIUM_HOST": "mobile-hub.lambdatest.com",
+        "APPIUM_PORT": "80",
+        "APPIUM_PATH": "/wd/hub",
+        "APPIUM_PROTOCOL": "https",
+        "LT_USERNAME": "${LT_USERNAME}",
+        "LT_ACCESS_KEY": "${LT_ACCESS_KEY}"
+      }
+    }
+  }
+}
