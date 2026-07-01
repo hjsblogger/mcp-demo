@@ -1,8 +1,7 @@
-# MCP Demo
-
-![MCP Demo](docs/images/cover.svg)
-
+<img width="1983" height="793" alt="CoverImage" src="https://github.com/user-attachments/assets/788759a1-fd6f-49e6-ac69-404e5638cf27" />
+<p></p>
 This repo is a collection of working demos showing how **MCP (Model Context Protocol) servers** can drive real test automation frameworks through natural-language prompts via AI assistants (Claude CLI, Cline-based AI-IDEs like Kiro/Cursor/Windsurf/Antigravity, etc.).
+<p></p>
 
 Each subfolder wraps a different automation framework as an MCP server, exposing its capabilities as AI-agent-callable tools — letting you write and run tests by describing intent instead of hand-coding every step.
 
@@ -27,3 +26,11 @@ MCP standardizes how AI assistants call external tools. By wrapping an automatio
 ## Getting Started
 
 Each demo folder is self-contained with its own README, setup instructions, and example agent prompts. Start with [appium-mcp](https://github.com/hjsblogger/mcp-demo/tree/main/appium-mcp) for a full walkthrough of the pattern.
+
+## Have feedback or need assistance?
+Feel free to fork the repo and contribute to make it better! Thanks to the awesome AltTester team for the great support that they provided throughout the course of the integration!
+
+Email to [himanshu[dot]sheth[at]gmail[dot]com](mailto:himanshu.sheth@gmail.com) for any queries or ping me on the following social media sites:
+
+<b>LinkedIn</b>: [@hjsblogger](https://linkedin.com/in/hjsblogger)<br/>
+<b>Twitter</b>: [@hjsblogger](https://www.twitter.com/hjsblogger)
