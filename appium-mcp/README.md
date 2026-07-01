@@ -1,5 +1,7 @@
 # Appium MCP: AI-Powered Mobile Test Automation
 
+<img width="610" height="351" alt="Screenshot 2026-07-01 at 6 07 01 PM" src="https://github.com/user-attachments/assets/b0268e12-4a05-442b-8fee-8aab523eb6ea" />
+
 This repo is a working demo of **Appium MCP** — an MCP server that wraps Appium's mobile automation capabilities as AI-agent-callable tools, letting you drive Android/iOS test sessions with natural-language prompts via Claude CLI or Cline-based AI-IDEs (Kiro, Cursor, Windsurf, Antigravity).
 
 > Based on the companion blog: *Appium MCP: AI-Powered Mobile Test Automation*
@@ -52,14 +54,24 @@ Appium MCP acts as a bridge between AI assistants and the Appium automation fram
 AI Client -> MCP Protocol (JSON-RPC 2.0) -> MCP Server -> Underlying Service (Appium Server -> Device)
 ```
 
-![Figure 1: Appium MCP Architecture](docs/images/architecture-diagram.png)
-*Figure 1: Appium MCP Architecture (AI-generated diagram)*
+<img width="634" height="451" alt="Screenshot 2026-07-01 at 6 07 21 PM" src="https://github.com/user-attachments/assets/b5362833-3293-4611-8e56-a25f47439c70" />
+Figure 1: Appium MCP Architecture (AI-generated diagram)
+<p></p>
 
-1. **AI Client Layer** — AI assistants (Claude, ChatGPT, Gemini) and AI-native IDEs (Cursor, Kiro, Antigravity) interpret user intent from natural-language prompts.
-2. **MCP Client** — Embedded in the AI assistant/IDE; selects and invokes the appropriate MCP tool call, and relays responses back to the AI.
-3. **Appium MCP Server** — Exposes mobile automation as callable tools (`find_element`, `tap`, `swipe`, `take_screenshot`, etc.), converting invocations into standard WebDriver commands.
-4. **Appium Server** — Translates WebDriver-compliant commands into platform-specific instructions for the Device Under Test (DUT).
-5. **Device Layer** — The execution environment: emulators/simulators for local dev, or a cloud platform like **TestMu AI** for scalable, cross-device testing.
+#### 1. AI Client Layer
+AI assistants (Claude, ChatGPT, Gemini) and AI-native IDEs (Cursor, Kiro, Antigravity) interpret user intent from natural-language prompts.
+
+  #### 2. MCP Client
+  Embedded in the AI assistant/IDE; selects and invokes the appropriate MCP tool call, and relays responses back to the AI.
+
+  #### 3. Appium MCP Server
+  Exposes mobile automation as callable tools (`find_element`, `tap`, `swipe`, `take_screenshot`, etc.), converting invocations into standard WebDriver commands.
+
+  #### 4. Appium Server
+  Translates WebDriver-compliant commands into platform-specific instructions for the Device Under Test (DUT).
+
+  #### 5. Device Layer
+  The execution environment: emulators/simulators for local dev, or a cloud platform like **TestMu AI** for scalable, cross-device testing.
 
 ## Repo Layout
 
@@ -167,9 +179,16 @@ With the returned App ID plugged into `capabilities/lt-rd-capabilities.json` and
 ```
 Read device capabilities from lt-rd-capabilities.json and trigger tests from instructions/agent.md
 ```
+<img width="638" height="433" alt="Screenshot 2026-07-01 at 6 19 25 PM" src="https://github.com/user-attachments/assets/8b26a8b9-ebba-4bc4-8a13-abf8e3dc7d74" />
+<p></p>
+<img width="637" height="428" alt="Screenshot 2026-07-01 at 6 19 34 PM" src="https://github.com/user-attachments/assets/32752b54-916c-4b8a-9fbd-563bb547c361" />
+<p></p>
 
-![TestMu AI cloud test execution](docs/images/testmu-cloud-run.png)
 *Test running in parallel on two real devices via the Appium MCP server, with results visible on the TestMu AI dashboard and status reflected in Claude Code CLI*
+
+<img width="636" height="318" alt="Screenshot 2026-07-01 at 6 23 37 PM" src="https://github.com/user-attachments/assets/387e7d82-f09d-40e3-901e-1dc63207b585" /><p></p>
+<img width="632" height="291" alt="Screenshot 2026-07-01 at 6 23 48 PM" src="https://github.com/user-attachments/assets/737a4e93-cb63-4807-953e-aad93baf2891" />
+<p></p>
 
 For a **local emulator/simulator** run, update `capabilities/lt-local-capabilities.json` (or launch one first, e.g. `emulator -avd Pixel_7_Android_34 -wipe-data`) and use the same `agent.md` with an adjusted prompt:
 
@@ -179,7 +198,7 @@ Read device capabilities from lt-local-capabilities.json and trigger tests from 
 
 The same workflow (real device, emulator, cloud) applies equally to iOS apps.
 
-![Kiro/Cline test execution](docs/images/kiro-cline-run.png)
+<img width="586" height="550" alt="Screenshot 2026-07-01 at 6 25 08 PM" src="https://github.com/user-attachments/assets/0eaca017-0450-4ccc-ae73-2fabe5d81d1b" /><p></p>
 *Same agent instructions executed successfully via Cline in Kiro*
 
 ## Code Generation with Appium MCP
@@ -197,7 +216,7 @@ This produces a maintainable Page Object Model structure (see `tests-java/`):
 - A Page Object class with discovered locators and reusable methods
 - A test class that consumes the Page Object for test scenarios
 
-![Generated POM test code](docs/images/code-generation.png)
+<img width="629" height="585" alt="Screenshot 2026-07-01 at 6 27 58 PM" src="https://github.com/user-attachments/assets/0abac2e7-320b-4570-91db-4a821ca4bb2a" />
 *Generated Java/TestNG code organized into base test, Page Object, and test classes*
 
 While `appium_generate_tests` natively targets Java/TestNG, Claude CLI or Cline can generate code in other languages/frameworks (e.g., Python pytest) based on the same session interactions.
