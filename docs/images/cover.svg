@@ -1,0 +1,89 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="10%" cy="90%" r="60%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#glow)"/>
+  <rect width="1200" height="360" fill="url(#glow2)"/>
+
+  <!-- faint circuit / node grid backdrop -->
+  <g stroke="#94a3b8" stroke-opacity="0.12" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="290" x2="1200" y2="290"/>
+    <line x1="120" y1="0" x2="120" y2="360"/>
+    <line x1="1080" y1="0" x2="1080" y2="360"/>
+  </g>
+  <g fill="#38bdf8" fill-opacity="0.5">
+    <circle cx="120" cy="70" r="3.5"/>
+    <circle cx="1080" cy="70" r="3.5"/>
+    <circle cx="120" cy="290" r="3.5"/>
+    <circle cx="1080" cy="290" r="3.5"/>
+  </g>
+
+  <!-- top accent bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="72" y="140" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#f8fafc">
+    MCP Demo
+  </text>
+  <text x="72" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#cbd5e1">
+    AI-Powered Test Automation with MCP Servers
+  </text>
+
+  <!-- accent underline -->
+  <rect x="74" y="200" width="220" height="5" rx="2.5" fill="url(#accent)"/>
+
+  <!-- Tool chips -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="600">
+    <g transform="translate(72,246)">
+      <rect width="150" height="46" rx="23" fill="#0ea5e9" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.6"/>
+      <circle cx="30" cy="23" r="8" fill="#38bdf8"/>
+      <text x="52" y="30" fill="#e0f2fe">Appium MCP</text>
+    </g>
+    <g transform="translate(240,246)">
+      <rect width="160" height="46" rx="23" fill="#22c55e" fill-opacity="0.16" stroke="#4ade80" stroke-opacity="0.6"/>
+      <circle cx="30" cy="23" r="8" fill="#4ade80"/>
+      <text x="52" y="30" fill="#dcfce7">Selenium MCP</text>
+    </g>
+    <g transform="translate(418,246)">
+      <rect width="175" height="46" rx="23" fill="#f472b6" fill-opacity="0.16" stroke="#f9a8d4" stroke-opacity="0.6"/>
+      <circle cx="30" cy="23" r="8" fill="#f9a8d4"/>
+      <text x="52" y="30" fill="#fce7f3">Playwright MCP</text>
+    </g>
+    <g transform="translate(611,246)">
+      <rect width="112" height="46" rx="23" fill="#94a3b8" fill-opacity="0.16" stroke="#cbd5e1" stroke-opacity="0.6"/>
+      <circle cx="26" cy="23" r="8" fill="#cbd5e1"/>
+      <text x="46" y="30" fill="#f1f5f9">+ more</text>
+    </g>
+  </g>
+
+  <!-- right side abstract device/AI glyph -->
+  <g transform="translate(940,90)" opacity="0.9">
+    <rect x="0" y="0" width="150" height="180" rx="18" fill="none" stroke="#818cf8" stroke-width="3"/>
+    <rect x="18" y="26" width="114" height="128" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <circle cx="75" cy="18" r="3" fill="#818cf8"/>
+    <rect x="60" y="164" width="30" height="6" rx="3" fill="#818cf8"/>
+    <path d="M40 60 L65 85 L40 110" stroke="#38bdf8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 60 L115 85 L90 110" stroke="#f472b6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="65" y1="130" x2="105" y2="130" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
