@@ -1,0 +1,26 @@
+[
+  {
+    "platformName": "Android",
+    "deviceName": "Galaxy S24",
+    "platformVersion": "14",
+    "app": "lt://APP10160461461782738510495925",
+    "build": "[LT-MCP-Demo] Android Real Device on TestMu AI Cloud",
+    "name": "[LT-MCP-Demo] Galaxy S24 Test",
+    "isRealMobile": true,
+    "region": "AP",
+    "autoAcceptAlerts": true,
+    "autoGrantPermissions": true
+  },
+  {
+    "platformName": "Android",
+    "deviceName": "Pixel 9",
+    "platformVersion": "15",
+    "app": "lt://APP10160461461782738510495925",
+    "build": "[LT-MCP-Demo] Android Real Device on TestMu AI Cloud",
+    "name": "[LT-MCP-Demo] Pixel 9 Test",
+    "isRealMobile": true,
+    "region": "AP",
+    "autoAcceptAlerts": true,
+    "autoGrantPermissions": true
+  }
+]

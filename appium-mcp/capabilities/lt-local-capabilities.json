@@ -1,0 +1,9 @@
+{
+    "platformName": "Android",
+    "deviceName": "emulator-5554",
+    "platformVersion": "14",
+    "automationName": "UiAutomator2",
+    "app": "app/proverbial_android.apk",
+    "autoAcceptAlerts": true,
+    "autoGrantPermissions": true
+}
