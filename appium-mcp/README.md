@@ -257,6 +257,10 @@ While `appium_generate_tests` natively targets Java/TestNG, Claude CLI or Cline 
   Uninstall the app after ending local emulator sessions.
 - **Pair with TestMu AI MCP for debugging** — fetch test details, command logs, and network logs directly from the TestMu AI cloud alongside Appium MCP for deeper triage.
 
-## Conclusion
+## Have feedback or need assistance?
+Feel free to fork the repo and contribute to make it better! Thanks to the awesome AltTester team for the great support that they provided throughout the course of the integration!
 
-Appium MCP delivers a real shift in mobile test automation — accelerating test script creation while cutting manual intervention, and bridging the gap between a natural-language test idea and a fully executable, maintainable automation suite. It also plays well with other AI tools and IDEs (GitHub Copilot, Kiro, Cursor), making test generation smarter and more consistent across a project.
+Email to [himanshu[dot]sheth[at]gmail[dot]com](mailto:himanshu.sheth@gmail.com) for any queries or ping me on the following social media sites:
+
+<b>LinkedIn</b>: [@hjsblogger](https://linkedin.com/in/hjsblogger)<br/>
+<b>Twitter</b>: [@hjsblogger](https://www.twitter.com/hjsblogger)
