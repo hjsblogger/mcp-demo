@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "selenium-mcp-local": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@angiejones/mcp-selenium"
+      ]
+    }
+  }
+}
