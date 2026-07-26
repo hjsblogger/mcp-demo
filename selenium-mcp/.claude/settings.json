@@ -6,6 +6,26 @@
         "-y",
         "@angiejones/mcp-selenium"
       ]
+    },
+    "selenium-mcp-testmuai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@hjsblogger/mcp-selenium-testmuai@latest"
+      ]
+    },
+    "selenium-mcp-cloud": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@hjsblogger/mcp-selenium-testmuai@latest"
+      ],
+      "env": {
+        "SELENIUM_REMOTE_URL": "https://hub.lambdatest.com/wd/hub",
+        "LT_USERNAME": "${LT_USERNAME}",
+        "LT_ACCESS_KEY": "${LT_ACCESS_KEY}"
+      }
     }
   }
 }
