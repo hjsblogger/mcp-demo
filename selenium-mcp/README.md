@@ -1,5 +1,7 @@
 # Selenium MCP: AI-Powered Test Automation
 
+<img width="1250" height="842" alt="Selenium MCP: AI-Powered Test Automation" src="docs/images/selenium-mcp-banner.png" />
+
 This repo is a working demo of **Selenium MCP** — an MCP server that wraps Selenium WebDriver's browser automation capabilities as AI-agent-callable tools, letting you drive Chrome/Firefox/Edge/Safari sessions with natural-language prompts via Claude Code, Warp, Kiro, or any other MCP-compatible client. It also extends the community server with **TestMu AI (LambdaTest) cloud grid** support for remote, cross-browser runs.
 
 > Based on the companion blog: *Selenium MCP: AI-Powered Test Automation*
