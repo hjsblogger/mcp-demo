@@ -10,7 +10,7 @@ Each subfolder wraps a different automation framework as an MCP server, exposing
 | Framework | Description | Link |
 |---|---|---|
 | **Appium MCP** | Drive Android/iOS mobile test sessions (local emulators/simulators or cloud devices) with natural-language prompts. | [appium-mcp](https://github.com/hjsblogger/mcp-demo/tree/main/appium-mcp) |
-| **Selenium MCP** | Web browser automation via Selenium, exposed as MCP tools. | Coming soon |
+| **Selenium MCP** | Web browser automation via Selenium, exposed as MCP tools. | [selenium-mcp](https://github.com/hjsblogger/mcp-demo/tree/main/selenium-mcp) |
 | **Playwright MCP** | Web browser automation via Playwright, exposed as MCP tools. | Coming soon |
 | **more...** | Additional MCP-wrapped automation frameworks. | Coming soon |
 
